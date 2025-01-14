@@ -33,7 +33,7 @@ console.log(teachers);
 // e salva il risultato nella variabile isFabioPresent
 const isFabioPresent = teachers.indexOf("Fabio");
 
-if (isFabioPresent == 0) {
+if (isFabioPresent < 0) {
   console.log("Fabio non è presente nell'array.")
 } else {
   console.log("Fabio è presente nell'array.")
@@ -42,3 +42,5 @@ if (isFabioPresent == 0) {
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = teachers.toString();
 console.log(teachersString)
+
+console.log(teachers.indexOf("Luca"))
